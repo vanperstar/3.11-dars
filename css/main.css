@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000;
+}
+
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+.films{
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.film{
+    text-align: center;
+    width: 30%;
+    /* height: 90vh; */
+    background: rgba(158, 42, 29, 0.741);
+    margin-top: 10px;
+    column-gap: 20px;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+span{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+img{
+    overflow: hidden;
+}
