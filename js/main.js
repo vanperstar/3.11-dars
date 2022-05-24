@@ -28,11 +28,16 @@ for (i = 0; i < movies.length; i++){
     var imageUrlEL = document.createElement("img")
     
     var genreDivEl = document.createElement("div")
+
+    
+
     for(var j=0; j < movies[i].genres.length; j++){
         var genreItemEl = document.createElement("div")
         genreItemEl.textContent = movies[i].genres[j]
         genreDivEl.appendChild(genreItemEl)
     }
+    imageUrlEL.srcset = movies[i].imageUrl
+    filmEl.appendChild(imageUrlEL)
 
     filmTitleEl.textContent = movies[i].title
     filmEl.appendChild(filmTitleEl)
@@ -53,8 +58,7 @@ for (i = 0; i < movies.length; i++){
     descriptionTextEL.textContent = movies[i].description
     filmEl.appendChild(descriptionTextEL)
 
-    imageUrlEL.srcset = movies[i].imageUrl
-    filmEl.appendChild(imageUrlEL)
+
 
     
 }
